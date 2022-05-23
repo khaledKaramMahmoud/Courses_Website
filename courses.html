@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="">
+        <nav class="navs">
+            <div class="nav_center">
+                <div class="nav_header d-flex justify-content-between align-items-center">
+                    <img src="images/logo.png" width="100" alt="logo" class="nav_logo">
+                    <button type="button" class="nav_toggle" id="nav_toggle">
+                       <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="nav_links">
+                    <a href="home.html" class="nav_link scroll_link">home</a>
+                    <a href="courses.html" class="nav_link scroll_link">courses</a>
+                    <a href="about.html" class="nav_link scroll_link">about us</a>
+                    <a href="contact.html" class="nav_link scroll_link">contact us</a>
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Language
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">عربي</a></li>
+                            <li><a href="#">Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- steps -->
+        <section class="steps container mt-4">
+            <h1 class="text-capitalize">to get your courses :</h1>
+            <ol class="container ">
+                <li class="lead">Lorem ipsum dolor sit amet.</li>
+                <li class="lead">Lorem ipsum dolor sit amet.</li>
+                <li class="lead">Lorem ipsum dolor sit amet.</li>
+                <li class="lead">Lorem ipsum dolor sit amet.</li>
+            </ol>
+        </section>
+        <!-- courses -->
+        <section class="container mt-3" id="courses">
+            <div class="title_wraber text-center mb-3">
+                <h2 class="title">All <span class="subtitle">courses</span></h2>
+            </div>
+            <div class="courses_center">
+                <article class="courses_card">
+                    <a href="#">
+                        <div class="courses_img_container">
+                            <img src="images/c1.jpeg" alt="...." class="courses_img" />
+                            <p class="courses_date">Abril 24th, 2020</p>
+                        </div>
+                        <div class="instructor_img_container text-center mt-3">
+                            <img src="images/c1.jpeg" alt="...." class="courses_img" />
+                            <p class="font-weight-bold lead">instructor name</p>
+                        </div>
+                        <div class="courses_footer pt-0">
+                            <h4 class="courses_title mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia adipisci sed aspernatur earum obcaecati odio recusandae nisi, modi amet, officiis sapiente possimus illo quam totam reiciendis omnis, non ratione! individual
+                                online lessons</h4>
+                            <div class="courses_info">
+                                <p class="courses_countrey">
+                                    <span><i class="fa fa-book"></i></span> individual online lessons
+                                </p>
+                                <div class="courses_datails">
+                                    <p>9 days</p>
+                                    <p>from $4100</p>
+                                </div>
+                            </div>
+                            <div class="courses-details">
+                                <p class="mb-1 text-capitalize lead font-weight-bold">course details</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur inventore molestiae ipsam nihil, doloribus quo aut assumenda quos eveniet, labore maxime harum exercitationem repellendus maiores at ex reprehenderit
+                                    delectus expedita?</p>
+                            </div>
+                            <input type="button" class="btn inroll-btn" value="Inroll">
+                        </div>
+                    </a>
+                </article>
+                <article class="courses_card">
+                    <a href="#">
+                        <div class="courses_img_container">
+                            <img src="images/c1.jpeg" alt="...." class="courses_img" />
+                            <p class="courses_date">Abril 24th, 2020</p>
+                        </div>
+                        <div class="instructor_img_container text-center mt-3">
+                            <img src="images/c1.jpeg" alt="...." class="courses_img" />
+                            <p class="font-weight-bold lead">instructor name</p>
+                        </div>
+                        <div class="courses_footer pt-0">
+                            <h4 class="courses_title mb-3">individual online lessons</h4>
+                            <div class="courses_info">
+                                <p class="courses_countrey">
+                                    <span><i class="fa fa-book"></i></span> individual online lessons
+                                </p>
+                                <div class="courses_datails">
+                                    <p>9 days</p>
+                                    <p>from $4100</p>
+                                </div>
+                            </div>
+                            <div class="courses-details">
+                                <p class="mb-1 text-capitalize lead font-weight-bold">course details</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur inventore molestiae ipsam nihil, doloribus quo aut assumenda quos eveniet, labore maxime harum exercitationem repellendus maiores at ex reprehenderit
+                                    delectus expedita?</p>
+                            </div>
+                            <input type="button" class="btn inroll-btn" value="Inroll">
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <!-- table -->
+        <div class="container mt-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>individual online lessons</th>
+                        <th>online group lessons</th>
+                        <th>conversation club</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- qustionios -->
+        <div class="qustionios container mb-2">
+            <h3 class="my-4 text-center">Questions and Answers / FAQ</h3 class="mt-4">
+            <div class="ques">
+                <span><i class="showQ fa fa-plus mr-2"></i><i class="hideQ minus fa fa-minus mr-2 d-none"></i>1. Are these individual or group lessons? / Are these individual or group lessons?</span>
+                <p class="mt-2 answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, velit.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/courses.js"></script>
+</body>
+
+</html>

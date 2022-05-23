@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #0484D5;
+    --secondColor: #046CAE;
+    --mainTransition: all 1s ease;
+    --greyColor: #F1F1F1;
+    --main-shadow: 0 5px 10px rgb(192, 188, 188);
+    --font: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(243, 243, 243);
+    font-family: var(--font);
+}
+
+.nav li {
+    display: block;
+    background: #fff;
+    margin-bottom: 15px;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.nav li i {
+    font-size: 35px;
+    margin-top: .5rem;
+}
+
+.nav .nav-item {
+    text-align: center;
+}
+
+.nav .nav-item a {
+    color: #000;
+}
+
+.nav .location-item {
+    background: var(--mainColor);
+}
+
+.nav .location-item a {
+    color: #fff;
+}
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customers h2 {
+    font-weight: 600;
+}
+
+.customers .add-customers {
+    background: var(--mainColor);
+    border-radius: 30px;
+}
+
+.add-customers img {
+    width: 20px;
+}
+
+table {
+    border-radius: 10px;
+    box-shadow: var(--main-shadow);
+}
+
+thead tr th {
+    color: var(--secondColor);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions img:hover,
+.customers .add-customers:hover,
+.nav .nav-item {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+    .nav {
+        flex-direction: column;
+    }
+    article {
+        display: flex;
+        margin-top: 20px;
+    }
+    .line {
+        width: 1px;
+        background: var(--secondColor);
+        min-height: 95vh;
+        margin-bottom: 15px;
+        margin-left: -15px;
+    }
+    .profile {
+        width: 75%;
+    }
+    .profile .card {
+        border-radius: 5px;
+        box-shadow: var(--main-shadow);
+    }
+    .profile .card h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.image-table img {
+    width: 120px;
+    height: 100px;
+}
+
+
+/* modals */

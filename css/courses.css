@@ -1,0 +1,57 @@
+.steps ol li {
+    list-style-position: inside;
+}
+
+.steps {
+    color: #010059;
+}
+
+.courses-details p {
+    color: #00028C;
+}
+
+.courses_card .inroll-btn {
+    background: #ED1250;
+    border: 4px solid #ED1250;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: .2rem 1.5rem;
+}
+
+.instructor_img_container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.instructor_img_container p {
+    color: #010059;
+}
+
+
+/* questions */
+
+.qustionios h3 {
+    color: #00028C;
+}
+
+.ques span {
+    color: #010059;
+}
+
+.ques i {
+    cursor: pointer;
+    color: #010059;
+}
+
+.answer {
+    height: 0;
+    overflow: auto;
+    transition: var(--mainTransition);
+    color: #00028C;
+}
+
+.show {
+    height: 50px;
+}

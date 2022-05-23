@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navs">
+        <div class="nav_center">
+            <div class="nav_header d-flex justify-content-between align-items-center">
+                <img src="images/logo.png" width="100" alt="logo" class="nav_logo">
+                <button type="button" class="nav_toggle" id="nav_toggle">
+                   <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="nav_links">
+                <a href="index.html" class="nav_link scroll_link">home</a>
+                <a href="courses.html" class="nav_link scroll_link">courses</a>
+                <a href="about.html" class="nav_link scroll_link">about us</a>
+                <a href="contact.html" class="nav_link scroll_link">contact us</a>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Language
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">عربي</a></li>
+                        <li><a href="#">Russian</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- contact -->
+    <div class="container contact-form" id="contact">
+        <h3 class="text-md-center mt-4">Contact Us</h3>
+        <form action="">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control mb-3" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Email:</label>
+                <input type="email" class="form-control mb-3" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="comment">Your question:</label>
+                <textarea class="form-control mb-3" rows="5" id="comment"></textarea>
+            </div>
+            <div class="btn-div">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        <hr>
+        <div class="text-md-center">
+            <div class=" contact-us d-flex align-items-center">
+                <a href="" class=" con_icon d-block" target="blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+                <a href="" class="watts-link ml-3 d-block" target="blank">
+                    contact via wattsapp
+                </a>
+                <!-- <p class="lead font-weight-bold ml-2">01111111111</p> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

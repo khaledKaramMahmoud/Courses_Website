@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <article>
+        <section class="navbar align-content-start">
+            <ul class="nav container-fluid">
+                <li class="nav-item location-item" id="locationsClick">
+                    <i class="fa fa-home icon" style="color: #fff;"></i>
+                    <a id="lLink" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" id="customersClick">
+                    <i class="fa fa-book icon"></i>
+                    <a id="cLink" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item" id="keysClick">
+                    <i class="fa fa-users icon"></i>
+                    <a id="kLink" class="nav-link">Instructors</a>
+                </li>
+            </ul>
+        </section>
+        <div class="line"></div>
+        <!-- courses -->
+        <div id="customers" class="container-fluid d-none">
+            <section class="customers mb-3">
+                <h2>Courses</h2>
+                <div class="add-customers p-2">
+                    <img src="images/Path 8.png" alt="icon">
+                    <span class="text-light">Add Courses</span>
+                </div>
+            </section>
+            <section class="table">
+                <table class="table table-bordered bg-white">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>First-name</th>
+                            <th>Last-name</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>.....</td>
+                            <td>...</td>
+                            <td>....</td>
+                            <td>john@example.com</td>
+                            <td>...</td>
+                            <td>
+                                <div class="image-table">
+                                    <img src="images/c1.jpeg" alt="icon">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="actions" style="justify-content: space-between;">
+                                    <img src="images/Group 7.png" alt="icon">
+                                    <img src="images/Path 19.png" alt="icon" data-toggle="modal" data-target="#delModal">
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <!-- home -->
+        <div id="locations" class="container-fluid">
+            <section class="customers mb-3">
+                <h2>Home</h2>
+                <!-- <div class="add-customers p-2" data-toggle="modal" data-target="#locationModal">
+                    <img src="images/Path 8.png" alt="icon">
+                    <span class="text-light">Add Location</span>
+                </div> -->
+            </section>
+            <section class="table">
+                <table class="table table-bordered bg-white">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Access-code</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>.....</td>
+                            <td>
+                                <div class="actions">
+                                    <img src="images/Group 7.png" alt="icon">
+                                    <img src="images/Path 19.png" alt="icon">
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <!-- instructors  -->
+        <div id="keys" class="container-fluid d-none">
+            <section class="customers mb-3">
+                <h2>Instructors</h2>
+                <div class="add-customers p-2">
+                    <img src="images/Path 8.png" alt="icon">
+                    <span class="text-light">Add Instructors</span>
+                </div>
+            </section>
+            <section class="table">
+                <table class="table table-bordered bg-white">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Description</th>
+                            <th>Location</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Key-F0B-ID</th>
+                            <th>image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>...</td>
+                            <td>.....</td>
+                            <td>.....</td>
+                            <td>
+                                <div class="image-table">
+                                    <img src="images/c1.jpeg" alt="icon">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="actions" style="justify-content: space-between;">
+                                    <img src="images/Group 7.png" alt="icon">
+                                    <img src="images/Path 19.png" alt="icon" data-toggle="modal" data-target="#delModal">
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </article>
+    <!-- ---------------Modals--------------------------- -->
+
+    <!-- delete Modal -->
+    <div class="modal" id="delModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title font-weight-bold">Completing delete !</h4>
+                    <button type="button" class="close" data-dismiss="modal" style="font-size: 40px;">&times;</button>
+                </div>
+                <div class="modal-body d-flex justify-content-around">
+                    <button type="button" class="btn btn-primary w-25" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-danger w-25" data-dismiss="modal">No</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
